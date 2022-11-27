@@ -35,3 +35,4 @@ public class Hospital {
     private Integer totalNumberOfBeds;
     private Float totalAreaSize;
 }
+

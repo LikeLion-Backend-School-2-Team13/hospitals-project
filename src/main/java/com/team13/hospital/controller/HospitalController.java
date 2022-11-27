@@ -1,5 +1,6 @@
 package com.team13.hospital.controller;
 
+import com.team13.hospital.domain.dto.HospitalResponse;
 import com.team13.hospital.domain.entity.Hospital;
 import com.team13.hospital.service.HospitalService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +18,7 @@ public class HospitalController {
     }
 
     @GetMapping("/{id}")
-    public Hospital findById(@PathVariable("id") Integer id) {
+    public HospitalResponse findById(@PathVariable("id") Integer id) {
         return hospitalService.findById(id);
     }
 }
